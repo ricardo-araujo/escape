@@ -6,11 +6,15 @@ def welcome
   nome
 end
 
-def ask_move
+def ask_direction
   puts "\n\nWhere do you wanna go?\n"
   move = gets.strip
 end
 
 def draw_map(map)
   puts map
+end
+
+def warn_wrong_direction
+  puts "\nYou should choose between (WASD) keys to move!\n\n\n"
 end
